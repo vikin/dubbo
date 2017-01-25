@@ -10,7 +10,7 @@
 			#if($success)
 				sleep(this,500);
 				this.NextStep=function(){
-					window.location.href = '$redirect';
+					window.location.href = '$rootContextPath.getURI($redirect)';
 				}
 			#end
 			function sleep(obj,iMinSecond){
